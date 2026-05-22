@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryfont: "Cairo";
+}
+
+body{
+    font-family: var(--primaryfont);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Container */
+
+.container{
+    width: 84.5%;
+    margin: auto;
+    max-width: 1400px;
+}
+
+/* Row */
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Header */
+
+.hader{
+    padding: 20px 0;
+}
+
+.hader .row{
+    justify-content: space-between;
+}
+
+.hader ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Logo */
+
+
+
+.logo img{
+    
+    margin:0 ;
+}
+
+/* Header Image */
+
+.imgheader img{
+    width: 100%;
+    height: auto;
+}
+
+/* Category Circles */
+
+.CategoryCircles{
+    margin: 80px 0;
+}
+
+.CategoryCircles .row{
+    justify-content: center;
+    gap: 48px;
+}
+
+.itemCircle{
+    text-align: center;
+}
+
+.itemCircle h3{
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* Mobile */
+
+
+@media screen and (max-width:767px){
+
+    .container{
+        width: 95%;
+    }
+
+    .hader .list ul{
+        display: none;
+    }
+
+    .hader .row{
+        gap: 15px;
+    }
+
+    .icon ul{
+        gap: 20px;
+    }
+
+    .logo img{
+        width: 110px;
+    }
+
+    .CategoryCircles .row{
+        gap: 20px;
+    }
+
+    .itemCircle img{
+        width: 100px;
+    }
+
+}
+
+
+/* Tablet */
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    .container{
+        width: 90%;
+    }
+
+    .CategoryCircles .row{
+        gap: 30px;
+    }
+
+}
